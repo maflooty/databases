@@ -1,0 +1,18 @@
+USE imdb;
+
+-- Find the minimum and the maximum age of the actors per gender.
+SELECT MIN(age),MAX(age),gender
+FROM imdb.actors
+GROUP BY gender;
+
+-- Find how many actors are in their 20’s, 30’s, 40’s, 50’s etc (grouped by decade).
+
+
+
+-- Print the names and biographies of the actors in this format “ANNE HATHAWAY BIO: 1 golden globe”
+USE imdb;
+SELECT UPPER(fname),UPPER(lname),biography AS BIO
+FROM actors;
+
+
+-- Find the names of the directors who have more than 2 films in the database.
